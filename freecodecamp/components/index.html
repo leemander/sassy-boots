@@ -143,66 +143,59 @@
                 <div class="card-footer"><p>Lorem, ipsum dolor.</p></div>
               </article>
             </div>
-            <div class="col-lg-3">
-              <article class="card p-0">
-                <img
-                  src="https://source.unsplash.com/random/"
-                  class="card-img-top object-fit-cover"
-                  alt=""
-                  style="height: 20em"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">Lorem.</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Magnam, labore!
-                  </p>
-                  <a href="#" class="btn btn-primary">Go</a>
-                </div>
-                <div class="card-footer"><p>Lorem, ipsum dolor.</p></div>
-              </article>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h2>Alerts</h2>
+        <div class="alert alert-primary">
+          <span>Lorem ipsum dolor sit amet.</span>
+        </div>
+        <div
+          class="alert alert-success alert-dismissible fade show"
+          role="alert"
+        >
+          <span
+            >Lorem ipsum
+            <a href="#" class="alert-link">dolor sit amet.</a></span
+          >
+          <button class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <div class="d-flex align-items-start justify-content-between mb-5">
+          <button type="button" class="btn btn-primary" id="liveToastBtn">
+            Show live toast
+          </button>
+          <div
+            class="toast"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+            id="liveToast"
+          >
+            <div class="toast-header">
+              <img
+                src="https://source.unsplash.com/random/30x30"
+                class="rounded-circle me-2"
+                alt="..."
+              />
+              <strong class="me-auto">Bootstrap</strong>
+              <small>11 mins ago</small>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
             </div>
-            <div class="col-lg-3">
-              <article class="card p-0">
-                <img
-                  src="https://source.unsplash.com/random/"
-                  class="card-img-top object-fit-cover"
-                  alt=""
-                  style="height: 20em"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">Lorem.</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Magnam, labore!
-                  </p>
-                  <a href="#" class="btn btn-primary">Go</a>
-                </div>
-                <div class="card-footer"><p>Lorem, ipsum dolor.</p></div>
-              </article>
-            </div>
-            <div class="col-lg-3">
-              <article class="card p-0">
-                <img
-                  src="https://source.unsplash.com/random/"
-                  class="card-img-top object-fit-cover"
-                  alt=""
-                  style="height: 20em"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">Lorem.</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Magnam, labore!
-                  </p>
-                  <a href="#" class="btn btn-primary">Go</a>
-                </div>
-                <div class="card-footer"><p>Lorem, ipsum dolor.</p></div>
-              </article>
-            </div>
+            <div class="toast-body">Hello, world! This is a toast message.</div>
           </div>
         </div>
       </section>
     </main>
+    <script>
+      document.getElementById("liveToastBtn").addEventListener("click", () => {
+        document.getElementById("liveToast").classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
