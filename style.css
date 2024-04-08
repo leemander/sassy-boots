@@ -1,0 +1,13 @@
+body {
+  min-height: 100dvh;
+}
+
+.carousel-img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card-img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
