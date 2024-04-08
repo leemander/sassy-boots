@@ -165,6 +165,54 @@
           </table>
         </div>
       </section>
+      <section>
+        <h2 class="my-3">Forms</h2>
+        <p class="lead text-center">Contact us</p>
+        <div class="row justify-content-center mb-5">
+          <form
+            action=""
+            class="form col-lg-6 d-grid gap-2 border border-3 border-primary py-3 rounded"
+          >
+            <label for="name" class="form-label">
+              Name:
+              <input
+                class="form-control"
+                type="text"
+                id="name"
+                placeholder="e.g. John Smith"
+              />
+            </label>
+
+            <label for="email" class="form-label">
+              Email:
+              <input
+                class="form-control"
+                type="email"
+                id="email"
+                placeholder="e.g. john.smith@hotmail.com"
+              />
+            </label>
+            <label for="subject" class="form-label">
+              Subject:
+              <select id="subject" class="form-select">
+                <option value="payments">Payment query</option>
+                <option value="technical">Technical query</option>
+                <option value="other">Other query</option>
+              </select>
+            </label>
+            <label for="message" class="form-label">
+              Message:
+              <textarea
+                id="message"
+                cols="30"
+                rows="10"
+                class="form-control"
+              ></textarea>
+            </label>
+            <button class="btn btn-primary d-block mx-auto">Send</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
